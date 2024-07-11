@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(45deg, #190361 0%, #b0f 100%);
+  font-size: 1.6rem;
+
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.hide {
+  display: none;
+}
+
+/* screen1 */
+main {
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: 0rem 2rem 5rem 0rem rgba(0, 0, 0, 0.8);
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+
+  width: min(42.8rem, 90%);
+
+  margin-top: -12rem;
+}
+
+h1 {
+  color: #34355b;
+
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+
+  width: 30rem;
+}
+
+p {
+  color: #34355b;
+
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 15px;
+  font-style: normal;
+
+  margin-top: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.cookie {
+  cursor: pointer;
+}
+
+.cookie:hover {
+  animation: shake 0.8s infinite;
+}
+
+@keyframes shake {
+  0%{
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  25%{
+    transform: translate(1px, 1px) rotate(1deg);
+  }
+  50%{
+    transform: translate(-1px, -1px) rotate(-1deg);
+  }
+  75%{
+    transform: translate(2px, -1px) rotate(2deg);
+  }
+  100%{
+    transform: translate(-1px, 1px) rotate(-1deg);
+  }
+}
+
+/* screen2 */
+
+h2 {
+  color: #34355b;
+
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+p {
+  color: #000;
+
+  text-align: center;
+  font-family: "Dancing Script";
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 6rem;
+
+  background: #e4edf1;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.5);
+}
+
+button {
+  width: 18rem;
+  height: 5.2rem;
+  padding: 1.6rem;
+  gap: 1rem;
+
+  border-radius: 1rem;
+  background: #ff9500;
+
+  color: #fff;
+
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-top: 5rem;
+  margin-left: 6rem;
+
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #e7a849;
+}
